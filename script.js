@@ -6,7 +6,7 @@
 const WHATSAPP_NUMBER = "918269110086";
 
 function sendWhatsApp(message) {
-  if (WHATSAPP_NUMBER === "918269110086") {
+  if (WHATSAPP_NUMBER === "91XXXXXXXXXX") {
     alert("Please add your WhatsApp number in script.js first.");
     return;
   }

@@ -1,16 +1,7 @@
 
-// Thekua Darbar WhatsApp Ordering
-
-// Apna WhatsApp number yahan add karna.
-// India country code 91 ke saath, bina + ya spaces.
-const WHATSAPP_NUMBER = "918269110086";
+const WHATSAPP_NUMBER = "8269110086";
 
 function sendWhatsApp(message) {
-  if (WHATSAPP_NUMBER === "91XXXXXXXXXX") {
-    alert("Please add your WhatsApp number in script.js first.");
-    return;
-  }
-
   const url =
     "https://wa.me/" +
     WHATSAPP_NUMBER +
@@ -20,21 +11,20 @@ function sendWhatsApp(message) {
   window.open(url, "_blank");
 }
 
-// Product order
 function order(productName, price) {
   const message =
-    "Namaste Thekua Darbar! Mujhe order karna hai:\n\n" +
+    "Namaste Thekua Darbar!\n\n" +
+    "Mujhe ye product order karna hai:\n" +
     "Product: " + productName + "\n" +
     "Price: Rs. " + price + "\n\n" +
-    "Please confirm availability, delivery charges and payment details.";
+    "Please confirm availability and delivery charges.";
 
   sendWhatsApp(message);
 }
 
-// General contact
 function contactUs() {
   const message =
-    "Namaste Thekua Darbar! Mujhe aapke products ke baare mein jaankari chahiye.";
+    "Namaste Thekua Darbar! Mujhe products ki jaankari chahiye.";
 
   sendWhatsApp(message);
 }

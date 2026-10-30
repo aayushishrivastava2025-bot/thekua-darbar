@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #fffaf0;
+  color: #482719;
+  line-height: 1.6;
+}
+
+header {
+  background: #542b19;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #f4d7a0;
+  margin: 5px 0 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffc96b;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f3d6a2, #fff1d5);
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn, button {
+  display: inline-block;
+  background: #a64b24;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover, button:hover {
+  background: #713017;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.product {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product strong {
+  display: block;
+  margin: 15px 0;
+  color: #a64b24;
+  font-size: 20px;
+}
+
+.emoji {
+  font-size: 65px;
+}
+
+#about {
+  background: #f5e4c8;
+}
+
+#about p {
+  max-width: 650px;
+  margin: auto;
+}
+
+footer {
+  background: #542b19;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h2 {
+    font-size: 29px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 340px;
+  }
+}
